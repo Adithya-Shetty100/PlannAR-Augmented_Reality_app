@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/arFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:clickable="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/model"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/model" />
+
+            <ImageView
+                android:id="@+id/balloon"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/balloon" />
+
+            <ImageView
+                android:id="@+id/curtain"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/curtain" />
+
+            <ImageView
+                android:id="@+id/flower"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flower" />
+
+            <ImageView
+                android:id="@+id/chair"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chair" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="70dp"
+        android:text="Record 📷 " />
+
+
+</RelativeLayout>
